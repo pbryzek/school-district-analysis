@@ -3,8 +3,8 @@
 Bootcamp Challenge 4: Module PyCitySchools with Pandas
 
 ### Datasets Used
-[Schools Complete](https://courses.bootcampspot.com/courses/140/files/35407)
-[Students Complete](https://courses.bootcampspot.com/courses/140/files/35405)
+- [Schools Complete](https://courses.bootcampspot.com/courses/140/files/35407)
+- [Students Complete](https://courses.bootcampspot.com/courses/140/files/35405)
 
 ### Jupyter Notebook Created
 - [PyCitySchools_Challenge](PyCitySchools_Challenge.ipynb)
