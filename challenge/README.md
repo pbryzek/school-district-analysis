@@ -3,15 +3,15 @@
 Bootcamp Challenge 4: Module PyCitySchools with Pandas
 
 ### Datasets Used
-Schools Dataset 
+**Schools Dataset** 
 [Schools Complete](https://courses.bootcampspot.com/courses/140/files/35407)
 
-Students Dataset 
+**Students Dataset**
 [Students Complete](https://courses.bootcampspot.com/courses/140/files/35405)
 
 ### Jupyter Notebook Created
-[PyCitySchools_Challenge](PyCitySchools_Challenge.ipynb)
-[Results](output/results.txt)
+- [PyCitySchools_Challenge](PyCitySchools_Challenge.ipynb)
+- [Results](output/results.txt)
 
 ### Challenge Description
 The grades of the ninth graders at Thomas High School have been changed. While administrators do not know the full extent of this academic dishonesty, they want to uphold the standards of state testing and have turned to you for help.
