@@ -30,7 +30,7 @@ As the entire district contains many schools and students, it is to be expected 
 
 In the original dataset where we included Thomas High School 9th grade, we observed the following statistics.
 
-**Original**
+**Original**<br/>
 Average Math Score: 79.0
 Average Reading Score %: 81.9
 Passing Math %: 74.98
@@ -39,7 +39,7 @@ Overall Passing: 65.17
 
 When the scripts were updated to replace the Math and Reading scores with NaN for all students attending 9th grade Thomas High School we observed the following statistics.
 
-**NaN Modified**
+**NaN Modified**<br/>
 Average Math Score: 78.9
 Average Reading Score	%: 81.9
 Passing Math	%: 73.88
@@ -51,7 +51,7 @@ The difference observed by replacing the 9th grade Thomas High School math and r
 #### School Impact
 Logically there was no impact to any school (individually) other than Thomas High School. Included here are the 2 sets of data that breaks down the statistics across all schools. We observe that only the Thomas High School row has data fields that have changed from the challenge assignment. As expected, changing the reading and math scores for Thomas HS did not impact the number of schools, the names of the schools, the type of school, their budgets, nor the number of students per school.
 
-**Original**
+**Original**<br/>
 	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Bailey High School	District	4976	$3,124,928.00	$628.00	77.048432	81.033963	66.680064	81.933280	54.642283
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
@@ -69,7 +69,7 @@ Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272
 Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
 Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333333	96.611111	90.333333
 
-**NaN Modified**
+**NaN Modified**<br/>
 School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Bailey High School	District	4976	$3,124,928.00	$628.00	77.048432	81.033963	66.680064	81.933280	54.642283
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
@@ -90,14 +90,14 @@ Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333
 #### High Performing Schools Impact
 In the original dataset, Thomas High School was ranked 2nd best school in terms of Overall Passing Percentage with 90.95%, with the NaN modification it dropped off the top 5 schools entirely allowing Wright High School to capture the 5th spot with a 90.33% Overall Passing Rate.
 
-**Original**
+**Original**<br/>
 	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
 Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
 Griffin High School	Charter	1468	$917,500.00	$625.00	83.351499	83.816757	93.392371	97.138965	90.599455
 Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
 Pena High School	Charter	962	$585,858.00	$609.00	83.839917	84.044699	94.594595	95.945946	90.540541
-**NaN Modified**
+**NaN Modified**<br/>
 School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
 Griffin High School	Charter	1468	$917,500.00	$625.00	83.351499	83.816757	93.392371	97.138965	90.599455
@@ -108,7 +108,7 @@ Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333
 #### Low Performing Schools Impact
 The bottom 5 schools demonstrate an Overall Passing % range from 52.988 (Rodriguez HS) to 53.539 (Johnson HS). With an overall passing rate so low, even when Thomas HS drops (NaNs) all its reading and math scores, it still manages to avoid the bottom 5 schools as ranked by overall passing percentage. Thus this change did not impact the bottom 5 schools.
 
-**Original**
+**Original**<br/>
 	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
 Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
@@ -116,7 +116,7 @@ Huang High School	District	2917	$1,910,635.00	$655.00	76.629414	81.182722	65.683
 Hernandez High School	District	4635	$3,022,020.00	$652.00	77.289752	80.934412	66.752967	80.862999	53.527508
 Johnson High School	District	4761	$3,094,650.00	$650.00	77.072464	80.966394	66.057551	81.222432	53.539172
 
-**NaN Modified**
+**NaN Modified**<br/>
 School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
 Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
@@ -127,23 +127,24 @@ Johnson High School	District	4761	$3,094,650.00	$650.00	77.072464	80.966394	66.0
 #### Thomas High School Impact
 As expected, this data change had significant impact to Thomas HS itself. It experienced a 26.36% drop in the % of Passing Math, 27.65% drop in the % Passing Reading, and a 25.87% drop in the overall passing percentage. Clearly there was no impact to the name, type, or budget of the Thomas HS.
 
-**Original**
+**Original**<br/>
 Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
-**NaN Modified**
+**NaN Modified**<br/>
 Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.350937	83.896082	66.911315	69.663609	65.076453
 
 #### Math and Reading Scores by Grade
-**Original**
+**Original**<br/>
 **Math**
+
 **Reading**
-**NaN Modified**
+**NaN Modified**<br/>
 
 **Math**
 
 **Reading**
 
 #### Scores by School Spending
-**Original**
+**Original**<br/>
 The following bins were set to segment the scores by school spending/student: (<$584,$585-629,$630-644,$645-675). Thomas HS has a per student spending of $638 and thus we only observe an impact to the $630-644 category.
 - 6.47% decrease in % Overall Passing
 - 6.91% decrease in % Passing Reading
@@ -157,7 +158,7 @@ $585-629	81.9	83.2	87.13	92.72	81.42
 $630-644	78.5	81.6	73.48	84.39	62.86
 $645-675	77.0	81.0	66.16	81.13	53.53
 
-**NaN Modified**
+**NaN Modified**<br/>
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Spending Ranges (Per Student)					
 <$584	83.5	83.9	93.46	96.61	90.37
@@ -173,13 +174,13 @@ In the medium school category, there was negligble change in the Average Math/Re
 - % Passing Reading dropped 5.51%
 - % Passing Math dropped 5.27%
 
-**Original**
+**Original**<br/>
 	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Size					
 Small (<1000)	83.8	83.9	93.55	96.10	89.88
 Medium (1000-2000)	83.4	83.9	93.60	96.79	90.62
 Large (2000-5000)	77.7	81.3	69.96	82.77	58.29
-**NaN Modified**
+**NaN Modified**<br/>
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Size					
 Small (<1000)	83.8	83.9	93.55	96.10	89.88
@@ -195,12 +196,12 @@ As Thomas HS is a Charter HS and not a District HS, expectedly we only observe c
 - % Passing Reading dropped 3.46%
 - % Overall Passing dropped 3.23%
 
-**Original**
+**Original**<br/>
 	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Type					
 Charter	83.47385	83.89642	93.62	96.59	90.43
 District	77.0	81.0	66.55	80.80	53.67
-**NaN Modified**
+**NaN Modified**<br/>
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Type					
 Charter	83.46543	83.90231	90.33	93.13	87.20
