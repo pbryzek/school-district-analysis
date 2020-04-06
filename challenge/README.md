@@ -31,22 +31,22 @@ As the entire district contains many schools and students, it is to be expected 
 In the original dataset where we included Thomas High School 9th grade, we observed the following statistics.
 
 **Original**<br/>
-Average Math Score: 79.0
-Average Reading Score %: 81.9
+Average Math Score: 78.98537
+Average Reading Score: 81.87784
 Passing Math %: 74.98
 Passing Reading	%: 85.81
-Overall Passing: 65.17
-
+Overall Passing %: 65.17
+		
 When the scripts were updated to replace the Math and Reading scores with NaN for all students attending 9th grade Thomas High School we observed the following statistics.
 
-**NaN Modified**<br/>
-Average Math Score: 78.9
-Average Reading Score	%: 81.9
+<br/>**NaN Modified**<br/>
+Average Math Score: 78.93053		
+Average Reading Score: 81.85580
 Passing Math	%: 73.88
 Passing Reading	%: 84.65
-Overall Passing: 64.09
+Overall Passing %: 64.09
 
-The difference observed by replacing the 9th grade Thomas High School math and reading scores to NaN resulted in, district wide, a drop of .1% on the average Math Score, 0% change in the Average Reading Score, Passing Math % dropped 1.1%, Passing Reading % Dropped 1.16%, and overall passing dropped 1.08%. 
+The difference observed by replacing the 9th grade Thomas High School math and reading scores to NaN resulted in, district wide, a drop of .055% on the average Math Score, 0.022% change in the Average Reading Score, Passing Math % dropped 1.1%, Passing Reading % Dropped 1.16%, and overall passing dropped 1.08%. 
 			
 #### School Impact
 Logically there was no impact to any school (individually) other than Thomas High School. Included here are the 2 sets of data that breaks down the statistics across all schools. We observe that only the Thomas High School row has data fields that have changed from the challenge assignment. As expected, changing the reading and math scores for Thomas HS did not impact the number of schools, the names of the schools, the type of school, their budgets, nor the number of students per school.
@@ -69,7 +69,7 @@ Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272
 Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
 Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333333	96.611111	90.333333
 
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Bailey High School	District	4976	$3,124,928.00	$628.00	77.048432	81.033963	66.680064	81.933280	54.642283
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
@@ -88,7 +88,7 @@ Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867
 Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333333	96.611111	90.333333
 
 #### High Performing Schools Impact
-In the original dataset, Thomas High School was ranked 2nd best school in terms of Overall Passing Percentage with 90.95%, with the NaN modification it dropped off the top 5 schools entirely allowing Wright High School to capture the 5th spot with a 90.33% Overall Passing Rate.
+In the original dataset, Thomas High School was ranked 2nd best school in terms of Overall Passing Percentage with 90.95%, with the NaN modification it dropped off the top 5 schools entirely allowing Wright High School to capture the 5th spot with a 90.33% Overall Passing Rate. Thomas High School became the 8th highest rated school based on overall passing percentage after the NaN code change.
 
 **Original**<br/>
 	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
@@ -116,7 +116,7 @@ Huang High School	District	2917	$1,910,635.00	$655.00	76.629414	81.182722	65.683
 Hernandez High School	District	4635	$3,022,020.00	$652.00	77.289752	80.934412	66.752967	80.862999	53.527508
 Johnson High School	District	4761	$3,094,650.00	$650.00	77.072464	80.966394	66.057551	81.222432	53.539172
 
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
 Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
@@ -170,7 +170,7 @@ Shelton High School	84.1	83.4	84.4	82.8
 Thomas High School	83.7	84.3	83.6	83.8
 Wilson High School	83.9	84.0	83.8	84.3
 Wright High School	83.8	83.8	84.2	84.1
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 <br/>**Math**<br/>
 9th	10th	11th	12th
 Bailey High School	77.1	77.0	77.5	76.5
@@ -231,10 +231,11 @@ $645-675	77.0	81.0	66.16	81.13	53.53
 #### Scores by School Size
 As Thomas HS has 1635 students it is placed in the Medium category (1000-2000) students. Thus there was no observed impact in the Small and Large categories.
 
-In the medium school category, there was negligble change in the Average Math/Reading Scores.
+In the medium school category the following observationsL
 - % Overall Passing dropped 5.17%
 - % Passing Reading dropped 5.51%
 - % Passing Math dropped 5.27%
+- There was negligble change in the Average Math/Reading Scores.
 
 **Original**<br/>
 	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
