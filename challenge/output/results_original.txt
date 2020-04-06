@@ -1,3 +1,6 @@
+These are the results that were printed from Juptyer Notebook in order to evalaute and ultimatelly answer the questions to the Week 4 Challenge.
+#Resulting Dataset without using NaN on Thomas High School Grade 9
+
 school_data_df.tail(10)
 	School ID	school_name	type	size	budget
 5	5	Wilson High School	Charter	2283	1319574
@@ -10,18 +13,7 @@ school_data_df.tail(10)
 12	12	Johnson High School	District	4761	3094650
 13	13	Ford High School	District	2739	1763916
 14	14	Thomas High School	Charter	1635	1043130
-school_data_df.tail(10)
-	Student ID	student_name	gender	grade	school_name	reading_score	math_score
-39160	39160	Katie Weaver	F	11th	Thomas High School	89	86
-39161	39161	April Reyes	F	10th	Thomas High School	70	84
-39162	39162	Derek Weeks	M	12th	Thomas High School	94	77
-39163	39163	John Reese	M	11th	Thomas High School	90	75
-39164	39164	Joseph Anthony	M	9th	Thomas High School	97	76
-39165	39165	Donna Howard	F	12th	Thomas High School	99	90
-39166	39166	Dawn Bell	F	10th	Thomas High School	95	70
-39167	39167	Rebecca Tanner	F	9th	Thomas High School	73	84
-39168	39168	Desiree Kidd	F	10th	Thomas High School	99	90
-39169	39169	Carolyn Jackson	F	11th	Thomas High School	95	75
+
 student_data_df.tail(10)
 	Student ID	student_name	gender	grade	school_name	reading_score	math_score
 39160	39160	Katie Weaver	F	11th	Thomas High School	89	86
@@ -36,43 +28,55 @@ student_data_df.tail(10)
 39169	39169	Carolyn Jackson	F	11th	Thomas High School	95	75
 
 student_data_df.tail(10)
-Student ID	student_name	gender	grade	school_name	reading_score	math_score
-39160	39160	Katie Weaver	F	11th	Thomas High School	89.0	86.0
-39161	39161	April Reyes	F	10th	Thomas High School	70.0	84.0
-39162	39162	Derek Weeks	M	12th	Thomas High School	94.0	77.0
-39163	39163	John Reese	M	11th	Thomas High School	90.0	75.0
-39164	39164	Joseph Anthony	M	9th	Thomas High School	NaN	NaN
-39165	39165	Donna Howard	F	12th	Thomas High School	99.0	90.0
-39166	39166	Dawn Bell	F	10th	Thomas High School	95.0	70.0
-39167	39167	Rebecca Tanner	F	9th	Thomas High School	NaN	NaN
-39168	39168	Desiree Kidd	F	10th	Thomas High School	99.0	90.0
-39169	39169	Carolyn Jackson	F	11th	Thomas High School	95.0	75.0
+	Student ID	student_name	gender	grade	school_name	reading_score	math_score
+39160	39160	Katie Weaver	F	11th	Thomas High School	89	86
+39161	39161	April Reyes	F	10th	Thomas High School	70	84
+39162	39162	Derek Weeks	M	12th	Thomas High School	94	77
+39163	39163	John Reese	M	11th	Thomas High School	90	75
+39164	39164	Joseph Anthony	M	9th	Thomas High School	97	76
+39165	39165	Donna Howard	F	12th	Thomas High School	99	90
+39166	39166	Dawn Bell	F	10th	Thomas High School	95	70
+39167	39167	Rebecca Tanner	F	9th	Thomas High School	73	84
+39168	39168	Desiree Kidd	F	10th	Thomas High School	99	90
+39169	39169	Carolyn Jackson	F	11th	Thomas High School	95	75
+
+student_data_df.tail(10)
+	Student ID	student_name	gender	grade	school_name	reading_score	math_score
+39160	39160	Katie Weaver	F	11th	Thomas High School	89	86
+39161	39161	April Reyes	F	10th	Thomas High School	70	84
+39162	39162	Derek Weeks	M	12th	Thomas High School	94	77
+39163	39163	John Reese	M	11th	Thomas High School	90	75
+39164	39164	Joseph Anthony	M	9th	Thomas High School	97	76
+39165	39165	Donna Howard	F	12th	Thomas High School	99	90
+39166	39166	Dawn Bell	F	10th	Thomas High School	95	70
+39167	39167	Rebecca Tanner	F	9th	Thomas High School	73	84
+39168	39168	Desiree Kidd	F	10th	Thomas High School	99	90
+39169	39169	Carolyn Jackson	F	11th	Thomas High School	95	75
 
 school_data_complete_df.tail(10)
 	Student ID	student_name	gender	grade	school_name	reading_score	math_score	School ID	type	size	budget
-39160	39160	Katie Weaver	F	11th	Thomas High School	89.0	86.0	14	Charter	1635	1043130
-39161	39161	April Reyes	F	10th	Thomas High School	70.0	84.0	14	Charter	1635	1043130
-39162	39162	Derek Weeks	M	12th	Thomas High School	94.0	77.0	14	Charter	1635	1043130
-39163	39163	John Reese	M	11th	Thomas High School	90.0	75.0	14	Charter	1635	1043130
-39164	39164	Joseph Anthony	M	9th	Thomas High School	NaN	NaN	14	Charter	1635	1043130
-39165	39165	Donna Howard	F	12th	Thomas High School	99.0	90.0	14	Charter	1635	1043130
-39166	39166	Dawn Bell	F	10th	Thomas High School	95.0	70.0	14	Charter	1635	1043130
-39167	39167	Rebecca Tanner	F	9th	Thomas High School	NaN	NaN	14	Charter	1635	1043130
-39168	39168	Desiree Kidd	F	10th	Thomas High School	99.0	90.0	14	Charter	1635	1043130
-39169	39169	Carolyn Jackson	F	11th	Thomas High School	95.0	75.0	14	Charter	1635	1043130
+39160	39160	Katie Weaver	F	11th	Thomas High School	89	86	14	Charter	1635	1043130
+39161	39161	April Reyes	F	10th	Thomas High School	70	84	14	Charter	1635	1043130
+39162	39162	Derek Weeks	M	12th	Thomas High School	94	77	14	Charter	1635	1043130
+39163	39163	John Reese	M	11th	Thomas High School	90	75	14	Charter	1635	1043130
+39164	39164	Joseph Anthony	M	9th	Thomas High School	97	76	14	Charter	1635	1043130
+39165	39165	Donna Howard	F	12th	Thomas High School	99	90	14	Charter	1635	1043130
+39166	39166	Dawn Bell	F	10th	Thomas High School	95	70	14	Charter	1635	1043130
+39167	39167	Rebecca Tanner	F	9th	Thomas High School	73	84	14	Charter	1635	1043130
+39168	39168	Desiree Kidd	F	10th	Thomas High School	99	90	14	Charter	1635	1043130
+39169	39169	Carolyn Jackson	F	11th	Thomas High School	95	75	14	Charter	1635	1043130
 
 passing_math_reading.head()
-Student ID	student_name	gender	grade	school_name	reading_score	math_score	School ID	type	size	budget
-4	4	Bonnie Ray	F	9th	Huang High School	97.0	84.0	0	District	2917	1910635
-5	5	Bryan Miranda	M	9th	Huang High School	94.0	94.0	0	District	2917	1910635
-6	6	Sheena Carter	F	11th	Huang High School	82.0	80.0	0	District	2917	1910635
-8	8	Michael Roth	M	10th	Huang High School	95.0	87.0	0	District	2917	1910635
-9	9	Matthew Greene	M	10th	Huang High School	96.0	84.0	0	District	2917	1910635
-
+	Student ID	student_name	gender	grade	school_name	reading_score	math_score	School ID	type	size	budget
+4	4	Bonnie Ray	F	9th	Huang High School	97	84	0	District	2917	1910635
+5	5	Bryan Miranda	M	9th	Huang High School	94	94	0	District	2917	1910635
+6	6	Sheena Carter	F	11th	Huang High School	82	80	0	District	2917	1910635
+8	8	Michael Roth	M	10th	Huang High School	95	87	0	District	2917	1910635
+9	9	Matthew Greene	M	10th	Huang High School	96	84	0	District	2917	1910635
 
 district_summary_df
 Total Schools	Total Students	Total Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
-0	15	39,170.0	$24,649,428.00	78.9	81.9	73.88	84.65	64.09
+0	15	39,170.0	$24,649,428.00	79.0	81.9	74.98	85.81	65.17
 
 per_school_counts
 Bailey High School       4976
@@ -93,7 +97,8 @@ Holden High School        427
 Name: school_name, dtype: int64
 
 per_school_summary_df
-	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+
+School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Bailey High School	District	4976	$3,124,928.00	$628.00	77.048432	81.033963	66.680064	81.933280	54.642283
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
 Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
@@ -106,13 +111,12 @@ Johnson High School	District	4761	$3,094,650.00	$650.00	77.072464	80.966394	66.0
 Pena High School	Charter	962	$585,858.00	$609.00	83.839917	84.044699	94.594595	95.945946	90.540541
 Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
 Shelton High School	Charter	1761	$1,056,600.00	$600.00	83.359455	83.725724	93.867121	95.854628	89.892107
-Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.350937	83.896082	66.911315	69.663609	65.076453
+Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
 Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
 Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333333	96.611111	90.333333
 
 # Get the descriptive statistics for the per_school_capita.
 per_school_capita.describe()
-
 count     15.000000
 mean     620.066667
 std       28.544368
@@ -124,15 +128,16 @@ max      655.000000
 dtype: float64
 
 top_schools.head()
-	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+
+School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Cabrera High School	Charter	1858	$1,081,356.00	$582.00	83.061895	83.975780	94.133477	97.039828	91.334769
+Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
 Griffin High School	Charter	1468	$917,500.00	$625.00	83.351499	83.816757	93.392371	97.138965	90.599455
 Wilson High School	Charter	2283	$1,319,574.00	$578.00	83.274201	83.989488	93.867718	96.539641	90.582567
 Pena High School	Charter	962	$585,858.00	$609.00	83.839917	84.044699	94.594595	95.945946	90.540541
-Wright High School	Charter	1800	$1,049,400.00	$583.00	83.682222	83.955000	93.333333	96.611111	90.333333
 
 bottom_schools.head()
-	School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+School Type	Total Students	Total School Budget	Per Student Budget	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Rodriguez High School	District	3999	$2,547,363.00	$637.00	76.842711	80.744686	66.366592	80.220055	52.988247
 Figueroa High School	District	2949	$1,884,411.00	$639.00	76.711767	81.158020	65.988471	80.739234	53.204476
 Huang High School	District	2917	$1,910,635.00	$655.00	76.629414	81.182722	65.683922	81.316421	53.513884
@@ -166,7 +171,7 @@ Ford High School	77.4	77.7	76.9	76.2
 Griffin High School	82.0	84.2	83.8	83.4
 
 reading_scores_by_grade.head()
-	9th	10th	11th	12th
+9th	10th	11th	12th
 Bailey High School	81.3	80.9	80.9	80.9
 Cabrera High School	83.7	84.3	83.8	84.3
 Figueroa High School	81.2	81.4	80.6	81.4
@@ -186,7 +191,7 @@ Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Over
 Spending Ranges (Per Student)					
 <$584	83.5	83.9	93.46	96.61	90.37
 $585-629	81.9	83.2	87.13	92.72	81.42
-$630-644	78.5	81.6	66.89	77.48	56.39
+$630-644	78.5	81.6	73.48	84.39	62.86
 $645-675	77.0	81.0	66.16	81.13	53.53
 
 per_school_summary_df.head()
@@ -198,14 +203,15 @@ Ford High School	District	2739	$1,763,916.00	$644.00	77.102592	80.746258	68.3096
 Griffin High School	Charter	1468	$917,500.00	$625.00	83.351499	83.816757	93.392371	97.138965	90.599455	$585-629	Medium (1000-2000)
 
 size_summary_df
+
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Size					
 Small (<1000)	83.8	83.9	93.55	96.10	89.88
-Medium (1000-2000)	83.4	83.9	88.33	91.26	85.45
+Medium (1000-2000)	83.4	83.9	93.60	96.79	90.62
 Large (2000-5000)	77.7	81.3	69.96	82.77	58.29
 
 type_summary_df
-	Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
+Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Type					
-Charter	83.46543	83.90231	90.33	93.13	87.20
+Charter	83.47385	83.89642	93.62	96.59	90.43
 District	76.95673	80.96664	66.55	80.80	53.67
