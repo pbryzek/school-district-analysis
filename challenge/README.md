@@ -129,20 +129,82 @@ As expected, this data change had significant impact to Thomas HS itself. It exp
 
 **Original**<br/>
 Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.418349	83.848930	93.272171	97.308869	90.948012
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 Thomas High School	Charter	1635	$1,043,130.00	$638.00	83.350937	83.896082	66.911315	69.663609	65.076453
 
 #### Math and Reading Scores by Grade
+Here is presented the full dataset for all 15 schools with and without the NaN for Thomas HS. As expected, there is no change across any High School other than Thomas HS. Also, the 10th-12th grades had 0 impact on this data change. Importantly we observe that Thomas HS had 83.6 and 83.7 % passing rates in Math and Reading respectively for the 9th grade - after the NaN code change we observe new values of NaN and NaN for Math and Reading for the 9th grade, an expected result.
+
 **Original**<br/>
-**Math**
-
-**Reading**
+<br/>**Math**<br/>
+	9th	10th	11th	12th
+Bailey High School	77.1	77.0	77.5	76.5
+Cabrera High School	83.1	83.2	82.8	83.3
+Figueroa High School	76.4	76.5	76.9	77.2
+Ford High School	77.4	77.7	76.9	76.2
+Griffin High School	82.0	84.2	83.8	83.4
+Hernandez High School	77.4	77.3	77.1	77.2
+Holden High School	83.8	83.4	85.0	82.9
+Huang High School	77.0	75.9	76.4	77.2
+Johnson High School	77.2	76.7	77.5	76.9
+Pena High School	83.6	83.4	84.3	84.1
+Rodriguez High School	76.9	76.6	76.4	77.7
+Shelton High School	83.4	82.9	83.4	83.8
+Thomas High School	83.6	83.1	83.5	83.5
+Wilson High School	83.1	83.7	83.2	83.0
+Wright High School	83.3	84.0	83.8	83.6
+<br/>**Reading**<br/>
+9th	10th	11th	12th
+Bailey High School	81.3	80.9	80.9	80.9
+Cabrera High School	83.7	84.3	83.8	84.3
+Figueroa High School	81.2	81.4	80.6	81.4
+Ford High School	80.6	81.3	80.4	80.7
+Griffin High School	83.4	83.7	84.3	84.0
+Hernandez High School	80.9	80.7	81.4	80.9
+Holden High School	83.7	83.3	83.8	84.7
+Huang High School	81.3	81.5	81.4	80.3
+Johnson High School	81.3	80.8	80.6	81.2
+Pena High School	83.8	83.6	84.3	84.6
+Rodriguez High School	81.0	80.6	80.9	80.4
+Shelton High School	84.1	83.4	84.4	82.8
+Thomas High School	83.7	84.3	83.6	83.8
+Wilson High School	83.9	84.0	83.8	84.3
+Wright High School	83.8	83.8	84.2	84.1
 **NaN Modified**<br/>
-
-**Math**
-
-**Reading**
-
+<br/>**Math**<br/>
+9th	10th	11th	12th
+Bailey High School	77.1	77.0	77.5	76.5
+Cabrera High School	83.1	83.2	82.8	83.3
+Figueroa High School	76.4	76.5	76.9	77.2
+Ford High School	77.4	77.7	76.9	76.2
+Griffin High School	82.0	84.2	83.8	83.4
+Hernandez High School	77.4	77.3	77.1	77.2
+Holden High School	83.8	83.4	85.0	82.9
+Huang High School	77.0	75.9	76.4	77.2
+Johnson High School	77.2	76.7	77.5	76.9
+Pena High School	83.6	83.4	84.3	84.1
+Rodriguez High School	76.9	76.6	76.4	77.7
+Shelton High School	83.4	82.9	83.4	83.8
+Thomas High School	nan	83.1	83.5	83.5
+Wilson High School	83.1	83.7	83.2	83.0
+Wright High School	83.3	84.0	83.8	83.6
+<br/>**Reading**<br/>
+9th	10th	11th	12th
+Bailey High School	81.3	80.9	80.9	80.9
+Cabrera High School	83.7	84.3	83.8	84.3
+Figueroa High School	81.2	81.4	80.6	81.4
+Ford High School	80.6	81.3	80.4	80.7
+Griffin High School	83.4	83.7	84.3	84.0
+Hernandez High School	80.9	80.7	81.4	80.9
+Holden High School	83.7	83.3	83.8	84.7
+Huang High School	81.3	81.5	81.4	80.3
+Johnson High School	81.3	80.8	80.6	81.2
+Pena High School	83.8	83.6	84.3	84.6
+Rodriguez High School	81.0	80.6	80.9	80.4
+Shelton High School	84.1	83.4	84.4	82.8
+Thomas High School	nan	84.3	83.6	83.8
+Wilson High School	83.9	84.0	83.8	84.3
+Wright High School	83.8	83.8	84.2	84.1
 #### Scores by School Spending
 **Original**<br/>
 The following bins were set to segment the scores by school spending/student: (<$584,$585-629,$630-644,$645-675). Thomas HS has a per student spending of $638 and thus we only observe an impact to the $630-644 category.
@@ -158,7 +220,7 @@ $585-629	81.9	83.2	87.13	92.72	81.42
 $630-644	78.5	81.6	73.48	84.39	62.86
 $645-675	77.0	81.0	66.16	81.13	53.53
 
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 Spending Ranges (Per Student)					
 <$584	83.5	83.9	93.46	96.61	90.37
@@ -180,7 +242,7 @@ School Size
 Small (<1000)	83.8	83.9	93.55	96.10	89.88
 Medium (1000-2000)	83.4	83.9	93.60	96.79	90.62
 Large (2000-5000)	77.7	81.3	69.96	82.77	58.29
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Size					
 Small (<1000)	83.8	83.9	93.55	96.10	89.88
@@ -201,7 +263,7 @@ As Thomas HS is a Charter HS and not a District HS, expectedly we only observe c
 School Type					
 Charter	83.47385	83.89642	93.62	96.59	90.43
 District	77.0	81.0	66.55	80.80	53.67
-**NaN Modified**<br/>
+<br/>**NaN Modified**<br/>
 Average Math Score	Average Reading Score	% Passing Math	% Passing Reading	% Overall Passing
 School Type					
 Charter	83.46543	83.90231	90.33	93.13	87.20
