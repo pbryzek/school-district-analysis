@@ -28,7 +28,8 @@ The following categories below summarize the overall impact to each of the categ
 #### District Summary Impact
 As the entire district contains many schools and students, it is to be expected that any impact originating from the 9th Grade Thomas High School will be averaged out and thus we should not expect to see drastic changes across the district.
 
-In the original dataset where we included Thomas High School 9th grade, we observed the following statistics:
+In the original dataset where we included Thomas High School 9th grade, we observed the following statistics.
+
 **Original**
 Average Math Score: 79.0
 Average Reading Score %: 81.9
@@ -36,7 +37,7 @@ Passing Math %: 74.98
 Passing Reading	%: 85.81
 Overall Passing: 65.17
 
-When the scripts were updated to replace the Math and Reading scores with NaN for all students attending 9th grade Thomas High School we observed the following statistics:
+When the scripts were updated to replace the Math and Reading scores with NaN for all students attending 9th grade Thomas High School we observed the following statistics.
 
 **NaN Modified**
 Average Math Score: 78.9
